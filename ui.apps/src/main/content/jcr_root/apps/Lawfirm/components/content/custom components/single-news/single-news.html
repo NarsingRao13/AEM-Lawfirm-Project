@@ -1,0 +1,18 @@
+
+<sly data-sly-use.ob = "com.lawfirm.core.models.SingleNews"></sly> 
+<div class="images">
+   <img src="${ob.image}" alt="Img" height="237" width="205">
+</div>
+<div class="details">
+   <p class="info">
+      ${ob.date} by <span class="author">${ob.author}</span>
+   </p>
+   <h2>${ob.headline}</h2>
+   <p>
+      ${ob.content}
+   </p>
+   <p>
+      ${ob.subContent}
+   </p>
+</div>
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="8ccd6057-ae2f-46a2-b3bb-dc3f13aba057">
+    <jcr:content
+        cq:name="demo1"
+        cq:parentPath="/content/dam/Lawfirm/random"
+        jcr:description=""
+        jcr:lastModified="{Date}2021-07-17T11:28:40.034+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="demo1"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2021-07-17T11:28:40.034+05:30">
+        <data
+            cq:model="/conf/Lawfirm/settings/dam/cfm/models/demo1"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                check="{Boolean}true"
+                check_x0040_LastModified="{Date}2021-07-17T11:28:39.687+05:30"
+                date="{Date}2021-07-14T11:27:00.000+05:30"
+                date_x0040_LastModified="{Date}2021-07-17T11:28:39.688+05:30"
+                image="/data.json"
+                image_x0040_LastModified="{Date}2021-07-17T11:28:39.688+05:30"
+                list="uma"
+                list_x0040_LastModified="{Date}2021-07-17T11:28:39.687+05:30"
+                multitext="&lt;p>nsjdfbherjbfsd&amp;nbsp; erkjg df kerjfnifnkenjed&lt;/p>&#xa;"
+                multitext_x0040_ContentType="text/html"
+                multitext_x0040_LastModified="{Date}2021-07-17T11:28:39.688+05:30"
+                num="{Double}465.0"
+                num_x0040_LastModified="{Date}2021-07-17T11:28:39.687+05:30"
+                tags_x0040_LastModified="{Date}2021-07-17T11:28:39.688+05:30"
+                text="dfjhj"
+                text_x0040_LastModified="{Date}2021-07-17T11:28:39.687+05:30"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,18 @@
+
+
+<sly data-sly-use.ob = "com.lawfirm.core.models.SideBarModel"></sly>
+<div class="sidebar">
+   <div>
+      <h2>${ob.heading}</h2>
+      <div data-sly-list.l = "${ob.sidebarContent}">
+         <p>${l.description}</p>
+      </div>
+   </div>
+   <div data-sly-use.cf="${'com.lawfirm.core.models.Testimonials' @ cfInput=properties.cfdata,variation=properties.variation}">
+      <h2>${cf.testimonialsTitle}</h2>
+      <p>
+         &ldquo;${cf.message}&rdquo; <span>- ${cf.authorName}</span>
+      </p>
+   </div>
+</div>
+

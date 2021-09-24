@@ -1,0 +1,16 @@
+
+
+<h2>Content Fragment Test Component</h2>
+<h3>${properties.heading}</h3>
+<div data-sly-use.cf="${'com.lawfirm.core.models.CFContentToComponent' @ cfInput=properties.cfdata,variation=properties.variation}">
+   ${cf.content @ context='html'}<br>
+   ${cf.title @ context='html'}
+   <ul data-sly-list = "${cf.multiValue}">
+      <li>${item }</li>
+   </ul>
+   ${cf.number @ context='html'}
+</div>
+<!--
+   http://localhost:4502/content/dam/Lawfirm/cfs/testing-cf.cfm.info.json
+   -->
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="4620b39f-465e-4829-8aa8-d9c6c29ad164">
+    <jcr:content
+        cq:name="footer-cf"
+        cq:parentPath="/content/dam/Lawfirm/cfs"
+        jcr:description=""
+        jcr:lastModified="{Date}2021-05-28T19:13:45.521+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="Footer Cf"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2021-05-28T19:13:45.521+05:30">
+        <data
+            cq:model="/conf/Lawfirm/settings/dam/cfm/models/footer"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                address="the address city, state 1111 "
+                address_x0040_LastModified="{Date}2021-05-28T19:13:45.456+05:30"
+                copyrightsText="© Copyright 2023 Manes Winchester. All Rights Reserved. "
+                copyrightsText_x0040_LastModified="{Date}2021-05-28T19:13:45.458+05:30"
+                email="info@freewebsitetemplates.com "
+                email_x0040_LastModified="{Date}2021-05-28T19:13:45.457+05:30"
+                latestNews="This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. You can remove any link."
+                latestNews_x0040_ContentType="text/html"
+                latestNews_x0040_LastModified="{Date}2021-05-28T19:13:45.456+05:30"
+                message="If you're having problems editing this website template, then don't hesitate to ask for help on the Forums."
+                message_x0040_ContentType="text/html"
+                message_x0040_LastModified="{Date}2021-05-28T19:13:45.457+05:30"
+                phoneNumber=" (+20) 000 222 999"
+                phoneNumber_x0040_LastModified="{Date}2021-05-28T19:13:45.456+05:30"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

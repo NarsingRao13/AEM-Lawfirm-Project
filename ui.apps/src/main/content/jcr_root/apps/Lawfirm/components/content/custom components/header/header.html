@@ -1,0 +1,22 @@
+
+
+<sly data-sly-use.obj = "com.lawfirm.core.models.HeaderDynamicModel"></sly>
+<div id="header">
+   <div class="clearfix">
+      <div class="logo">
+         <a href="${currentPage.path}"><img src="/content/dam/Lawfirm/images/logo.png" alt="LOGO" height="52" width="362"></a>
+      </div>
+      <ul data-sly-list.child="${obj.parentPage.listChildren}" class="navigation">
+         <li  data-sly-test="${!child.listChildren}" class="${(child.title == currentPage.title)?'active' : ''}">
+            <a href="${child.path}.html">${child.title}</a>
+         </li>
+         <li data-sly-test="${child.listChildren}">
+            <a href="${child.path}.html">${child.title}</a>
+            <div data-sly-list.child1="${child.listChildren}">
+               <a href="${child1.path}.html">${child1.title}</a>
+            </div>
+         </li>
+      </ul>
+   </div>
+</div>
+

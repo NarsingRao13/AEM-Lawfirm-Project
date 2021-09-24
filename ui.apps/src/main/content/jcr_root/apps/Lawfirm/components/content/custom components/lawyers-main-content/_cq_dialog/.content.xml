@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Lawyers Main Content"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="Lawfirm.contentfragment.lawyersMainContent">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <layout
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns">
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <main-ttitle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Provide valid title"
+                                fieldLabel="Main Title"
+                                name="./mainTitle"
+                                validation="heading-validation"/>
+                            <section-multifield
+                                granite:class="lawfirm-lawyerMain-multifield"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldLabel="Details"
+                                validation="lawfirm-multifield">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./rolesModel">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <role
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                            fieldDescription="Provide valid title"
+                                            fieldLabel="Role"
+                                            name="./role"
+                                            validation="heading-validation"/>
+                                        <check_x0020_boxs
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                            fieldDescription="Provide valid title"
+                                            name="./isLastOne"
+                                            text="Is last one?"
+                                            value="last-child"/>
+                                        <role-multifield
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                            composite="{Boolean}true"
+                                            fieldLabel="Details"
+                                            validation="lawfirm-multifield">
+                                            <field
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                name="./roleDetails">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <image
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                                        fieldDescription="Can not be empty"
+                                                        fieldLabel="Candidate Image"
+                                                        name="./image"
+                                                        rootPath="/content/dam/Lawfirm/images"/>
+                                                    <candidate-name
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                        fieldDescription="Provide valid title"
+                                                        fieldLabel="Candidate Name"
+                                                        name="./candidateName"
+                                                        validation="txt-validation"/>
+                                                    <description
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                        fieldDescription="Provide valid title"
+                                                        fieldLabel="Description"
+                                                        name="./description"
+                                                        validation="desc-validation"/>
+                                                </items>
+                                            </field>
+                                            <granite:data
+                                                jcr:primaryType="nt:unstructured"
+                                                max-items="{Long}2"
+                                                min-items="{Long}1"/>
+                                        </role-multifield>
+                                    </items>
+                                </field>
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    max-items="{Long}3"
+                                    min-items="{Long}1"/>
+                            </section-multifield>
+                        </items>
+                    </column>
+                </items>
+            </layout>
+        </items>
+    </content>
+</jcr:root>

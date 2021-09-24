@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="e1c9f885-2514-4577-89e1-d89b7be0d1ce">
+    <jcr:content
+        cq:name="demo-cf1"
+        cq:parentPath="/content/dam/Lawfirm/content-fragments"
+        cq:versionCreator="admin"
+        jcr:description=""
+        jcr:lastModified="{Date}2021-07-16T14:20:59.930+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="demo-cf1"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2021-07-16T14:20:59.930+05:30">
+        <data
+            cq:model="/conf/Lawfirm/settings/dam/cfm/models/demo-content-fragment"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                checked="{Boolean}false"
+                checked_x0040_LastModified="{Date}2021-07-16T14:20:59.830+05:30"
+                date="{Date}2021-07-15T02:59:00.000+05:30"
+                date_x0040_LastModified="{Date}2021-07-16T14:20:59.830+05:30"
+                list="rao"
+                list_x0040_LastModified="{Date}2021-07-16T14:20:59.831+05:30"
+                number="{Double}6546.0"
+                number_x0040_LastModified="{Date}2021-07-16T14:20:59.829+05:30"
+                text="Narsing Rao"
+                text_x0040_LastModified="{Date}2021-07-16T14:20:59.829+05:30"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

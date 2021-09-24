@@ -1,0 +1,3 @@
+http://localhost:4502/crx/explorer/index.jsp:-user creation
+localhost:4502/useradmin:-permissions for user
+http://localhost:4502/system/console/configMgr:- in usermapper create variable by assing bunde symbolic name.cfuser=cfuser.

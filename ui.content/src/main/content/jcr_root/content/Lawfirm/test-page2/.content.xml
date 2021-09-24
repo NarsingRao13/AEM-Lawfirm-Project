@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2021-08-02T17:17:48.070+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/Lawfirm/settings/wcm/templates/test-template2"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Test Page2"
+        sling:resourceType="Lawfirm/components/structure/base-page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:lastModified="{Date}2021-07-29T16:23:52.807+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <author
+                    jcr:created="{Date}2021-08-02T16:50:40.885+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-08-02T17:17:48.065+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="Lawfirm/components/content/custom components/author"
+                    email="narsing213@gmau.sd"
+                    fname="AEM"
+                    lname="Rao"
+                    pNum="+91 12345 56355"
+                    professor="true">
+                    <books jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            books="C+"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            books="Java"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            books="Python"/>
+                    </books>
+                    <bookdetailswithmap jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            bookdetailswithmap="dfsjn"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            bookdetailswithmap="frekj"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            bookdetailswithmap="rf"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            bookdetailswithmap="jebf"/>
+                    </bookdetailswithmap>
+                </author>
+            </responsivegrid>
+            <title
+                jcr:lastModified="{Date}2021-07-30T12:06:36.450+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Test Page2"
+                sling:resourceType="Lawfirm/components/content/title"/>
+        </root>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="2012c08e-90b4-4c34-9d66-33aa11a51e3f">
+    <jcr:content
+        cq:name="highlight-cf"
+        cq:parentPath="/content/dam/Lawfirm/cfs"
+        jcr:description="This is CF holds details of Highlight Block of Law Firm"
+        jcr:lastModified="{Date}2021-05-28T16:39:55.470+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="Highlight Cf"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2021-05-28T16:39:55.471+05:30">
+        <data
+            cq:model="/conf/Lawfirm/settings/dam/cfm/models/highlight-model"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                atest2=" Forums. "
+                atest2_x0040_LastModified="{Date}2021-05-28T16:39:55.299+05:30"
+                atext1="Free Website Templates"
+                atext1_x0040_LastModified="{Date}2021-05-28T16:39:55.298+05:30"
+                heading="The Manes Winchester Promise"
+                heading_x0040_LastModified="{Date}2021-05-28T16:39:55.297+05:30"
+                testimonialsAuthor="John Doe and Jane Doe"
+                testimonialsAuthor_x0040_LastModified="{Date}2021-05-28T16:39:55.297+05:30"
+                testimonialsText="Aenean ullamcorper purus vitae nisl tristique sollicitudin. Quisque vestibulum, erat ornare."
+                testimonialsText_x0040_LastModified="{Date}2021-05-28T16:39:55.296+05:30"
+                text1="This website template has been designed by "
+                text1_x0040_ContentType="text/plain"
+                text1_x0040_LastModified="{Date}2021-05-28T16:39:55.298+05:30"
+                text2="&lt;p>for you, for free. You can replace all this text with your own text. You can remove any link to our website from this website template, you're free to use this website template without linking back to us. If you're having problems editing this website template, then don't hesitate to ask for help on the&lt;/p>&#xa;"
+                text2_x0040_ContentType="text/html"
+                text2_x0040_LastModified="{Date}2021-05-28T16:39:55.298+05:30"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

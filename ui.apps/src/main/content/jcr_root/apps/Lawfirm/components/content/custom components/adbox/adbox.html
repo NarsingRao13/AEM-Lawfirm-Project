@@ -1,0 +1,15 @@
+
+
+<sly data-sly-use.ob = "com.lawfirm.core.models.AdBoxModel"></sly>
+<div id="adbox">
+   <div class="clearfix">
+      <img src="${ob.adImage}" alt="Img" height="382" width="594">
+      <div class="detail">
+         <h1>${ob.title1}<br> ${ob.title2}</h1>
+         <p>
+            ${ob.caption1}<br> ${ob.caption2}
+         </p>
+      </div>
+   </div>
+</div>
+

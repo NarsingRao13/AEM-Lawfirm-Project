@@ -1,0 +1,4 @@
+#base=js
+
+validate.js
+author.js

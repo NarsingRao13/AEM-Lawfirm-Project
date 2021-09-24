@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="ffc36cb8-74b9-4757-bb4c-3375b95d857f">
+    <jcr:content
+        cq:name="contact-cf"
+        cq:parentPath="/content/dam/Lawfirm/cfs"
+        jcr:description=""
+        jcr:lastModified="{Date}2021-06-01T18:04:18.585+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="contact-cf"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2021-06-01T18:04:18.585+05:30">
+        <data
+            cq:model="/conf/Lawfirm/settings/dam/cfm/models/contact-model"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                address="&lt;p>the address city, state 1111&lt;/p>&#xa;"
+                address_x0040_ContentType="text/html"
+                address_x0040_LastModified="{Date}2021-06-01T18:04:18.540+05:30"
+                email="info@freewebsitetemplates.com"
+                email_x0040_LastModified="{Date}2021-06-01T18:04:18.541+05:30"
+                fax="(+20) 000 222 988"
+                fax_x0040_LastModified="{Date}2021-06-01T18:04:18.541+05:30"
+                firm="Family Law Firm"
+                firm_x0040_LastModified="{Date}2021-06-01T18:04:18.539+05:30"
+                name="Manes Winchester"
+                name_x0040_LastModified="{Date}2021-06-01T18:04:18.539+05:30"
+                phone="(+20) 000 222 999 "
+                phone_x0040_LastModified="{Date}2021-06-01T18:04:18.540+05:30"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

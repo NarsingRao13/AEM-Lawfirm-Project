@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2021-07-17T11:33:00.449+05:30"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2021-06-05T18:22:03.852+05:30"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:template="/conf/Lawfirm/settings/wcm/templates/basetemplate"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Practices"
+        jcr:uuid="51ebc7b4-3348-4d5a-bf6f-c25907b6747a"
+        sling:resourceType="Lawfirm/components/structure/base-page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:lastModified="{Date}2021-05-27T10:49:13.955+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <body_content_holder
+                    jcr:created="{Date}2021-05-29T15:33:46.000+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-05-29T15:33:46.000+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="Lawfirm/components/content/custom components/body-content-holder">
+                    <contents
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/parsys">
+                        <practice_sidebar
+                            jcr:created="{Date}2021-05-29T17:39:40.586+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2021-07-17T11:33:00.422+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="Lawfirm/components/content/custom components/practice-sidebar"
+                            cfdata="/content/dam/Lawfirm/cfs/testimonials-cf"
+                            selectVariation="master"
+                            variation="master">
+                            <sideBar jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    link="/content/Lawfirm/india"
+                                    title="Prenuptial Agreement"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    link="/content/Lawfirm/india"
+                                    title="Marriage"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    link="/content/Lawfirm/india"
+                                    title="Divorce"/>
+                            </sideBar>
+                        </practice_sidebar>
+                        <practice_main
+                            jcr:created="{Date}2021-05-29T19:00:58.446+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2021-06-10T13:16:57.627+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="Lawfirm/components/content/custom components/practice-main"
+                            description="This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. You can remove any link to our website from this website template, you're free to use this website template without linking back to us. If you're having problems editing this website template, then don't hesitate to ask for help on the Forums.">
+                            <practiceFrames jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    imageLink="/content/dam/Lawfirm/images/prenuptial.jpg"
+                                    link="/content/Lawfirm/india"
+                                    title="Prenuptial Agreement"/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    imageLink="/content/dam/Lawfirm/images/bride.jpg"
+                                    link="/content/Lawfirm/india"
+                                    title="Marriage"/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    imageLink="/content/dam/Lawfirm/images/divorce.jpg"
+                                    link="/content/Lawfirm/india"
+                                    title="Divorce"/>
+                            </practiceFrames>
+                        </practice_main>
+                    </contents>
+                </body_content_holder>
+            </responsivegrid>
+        </root>
+    </jcr:content>
+</jcr:root>

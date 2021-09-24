@@ -1,0 +1,20 @@
+
+
+<sly data-sly-use.ob1 = "com.lawfirm.core.models.PracticeSideBar"></sly>
+<div class="sidebar">
+   <div>
+      <h2>Practices</h2>
+      <ul data-sly-list.l = "${ob1.sideBar}">
+         <li>
+            <a href="${l.link}.html">${l.title}</a>
+         </li>
+      </ul>
+   </div>
+   <div data-sly-use.cf="${'com.lawfirm.core.models.Testimonials' @ cfInput=properties.cfdata,variation=properties.variation}">
+      <h2>${cf.testimonialsTitle}</h2>
+      <p>
+         &ldquo;${cf.message @ context='text'}&rdquo; <span>- ${cf.authorName @ context='text'}</span>
+      </p>
+   </div>
+</div>
+

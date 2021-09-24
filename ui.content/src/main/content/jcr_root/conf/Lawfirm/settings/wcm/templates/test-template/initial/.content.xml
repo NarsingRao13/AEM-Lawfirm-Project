@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:template="/conf/Lawfirm/settings/wcm/templates/test-template"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="Lawfirm/components/structure/base-page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:lastModified="{Date}2021-07-27T10:53:51.506+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+            <container
+                jcr:created="{Date}2021-07-27T10:31:12.889+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-07-27T10:54:53.070+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="Lawfirm/components/content/container"/>
+            <container_1286595076
+                jcr:created="{Date}2021-07-27T10:31:21.227+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-07-27T10:55:10.493+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="Lawfirm/components/content/container"/>
+            <container_1291497789
+                jcr:created="{Date}2021-07-27T10:33:22.900+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-07-27T10:55:49.234+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="Lawfirm/components/content/container"/>
+            <container_1731189007
+                jcr:created="{Date}2021-07-27T10:33:34.386+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-07-27T10:56:12.512+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="Lawfirm/components/content/container"/>
+        </root>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2021-06-10T14:18:00.576+05:30"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2021-06-05T18:22:03.852+05:30"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:template="/conf/Lawfirm/settings/wcm/templates/basetemplate"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Our Lawyers"
+        jcr:uuid="c0b772a6-ebd9-4935-8cee-7948031a71ac"
+        sling:resourceType="Lawfirm/components/structure/base-page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:lastModified="{Date}2021-05-27T10:49:13.955+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <body_content_holder
+                    jcr:created="{Date}2021-05-31T12:19:28.051+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-05-31T12:19:28.051+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="Lawfirm/components/content/custom components/body-content-holder">
+                    <contents
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/parsys">
+                        <sidebar
+                            jcr:created="{Date}2021-05-31T12:19:48.073+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2021-06-10T13:48:41.755+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="Lawfirm/components/content/custom components/sidebar"
+                            cfdata="/content/dam/Lawfirm/cfs/testimonials-cf"
+                            heading="Our Lawyers"
+                            selectVariation="testimonials_in_ourlawyerspage"
+                            variation="testimonials_in_ourlawyerspage">
+                            <sidebarContent jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    description="This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text."/>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    description="You can remove any link to our website from this website template, you're free to use this website template without linking back to us."/>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    description="If you're having problems editing this website template, then don't hesitate to ask for help on the Forums."/>
+                            </sidebarContent>
+                        </sidebar>
+                        <lawyers_main_content
+                            jcr:created="{Date}2021-06-02T11:25:18.068+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2021-06-10T14:18:00.569+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="Lawfirm/components/content/custom components/lawyers-main-content"
+                            mainTitle="Our Lawyers">
+                            <rolesModel jcr:primaryType="nt:unstructured">
+                                <item0
+                                    jcr:primaryType="nt:unstructured"
+                                    role="Directors">
+                                    <roleDetails jcr:primaryType="nt:unstructured">
+                                        <item0
+                                            jcr:primaryType="nt:unstructured"
+                                            candidateName="Pauline H. Wilson"
+                                            description="This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text.You can remove any link to our website from this website template."
+                                            image="/content/dam/Lawfirm/images/thumbnail-sideview.jpg"/>
+                                        <item1
+                                            jcr:primaryType="nt:unstructured"
+                                            candidateName="Kenneth E. Lunderberg"
+                                            description="You're free to use this website template without linking back to us. If you're having problems editing this website template, then don't hesitate to ask for help on the Forums."
+                                            image="/content/dam/Lawfirm/images/thumbnail-focus.jpg"/>
+                                    </roleDetails>
+                                </item0>
+                                <item1
+                                    jcr:primaryType="nt:unstructured"
+                                    role="Senior Associates">
+                                    <roleDetails jcr:primaryType="nt:unstructured">
+                                        <item0
+                                            jcr:primaryType="nt:unstructured"
+                                            candidateName="George R. Montgomery"
+                                            description="This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text.You can remove any link to our website from this website template."
+                                            image="/content/dam/Lawfirm/images/thumbnail-smile.jpg"/>
+                                    </roleDetails>
+                                </item1>
+                                <item2
+                                    jcr:primaryType="nt:unstructured"
+                                    isLastOne="last-child"
+                                    role="Associates">
+                                    <roleDetails jcr:primaryType="nt:unstructured">
+                                        <item0
+                                            jcr:primaryType="nt:unstructured"
+                                            candidateName="Denise M. Silvia"
+                                            description="This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text.You can remove any link to our website from this website template."
+                                            image="/content/dam/Lawfirm/images/thumbnail-frontview.jpg"/>
+                                        <item1
+                                            jcr:primaryType="nt:unstructured"
+                                            candidateName="Nancy R. Bakken"
+                                            description="You're free to use this website template without linking back to us. If you're having problems editing this website template, then don't hesitate to ask for help on the Forums."
+                                            image="/content/dam/Lawfirm/images/thumbnail-happy.jpg"/>
+                                    </roleDetails>
+                                </item2>
+                            </rolesModel>
+                        </lawyers_main_content>
+                    </contents>
+                </body_content_holder>
+            </responsivegrid>
+        </root>
+    </jcr:content>
+</jcr:root>

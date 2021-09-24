@@ -1,0 +1,9 @@
+
+
+<div data-sly-use.cf="${'com.lawfirm.core.models.Testimonials' @ cfInput=properties.cfdata,variation=properties.variation}">
+   <h2>${cf.testimonialsTitle}</h2>
+   <p>
+      &ldquo;${cf.message}&rdquo; <span>- ${cf.authorName}</span>
+   </p>
+</div>
+

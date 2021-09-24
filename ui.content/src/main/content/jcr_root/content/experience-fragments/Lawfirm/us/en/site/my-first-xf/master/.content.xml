@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2021-07-17T11:37:21.712+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/Lawfirm/settings/wcm/templates/experience-fragment-web-variation-template"
+        cq:xfMasterVariation="{Boolean}true"
+        cq:xfVariantType="web"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="about-xf"
+        sling:resourceType="Lawfirm/components/structure/xfpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <about_content_holder
+                    jcr:created="{Date}2021-05-29T12:23:45.342+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-05-29T12:23:45.342+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="Lawfirm/components/content/custom components/about-content-holder">
+                    <contents
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/parsys">
+                        <title_887387329
+                            jcr:created="{Date}2021-05-29T12:31:01.239+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2021-05-29T12:31:08.256+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="About Us"
+                            sling:resourceType="Lawfirm/components/content/title"
+                            type="h1"/>
+                        <about_image
+                            jcr:created="{Date}2021-05-29T12:24:40.153+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2021-05-29T12:25:01.762+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="Lawfirm/components/content/custom components/about-image"
+                            image="/content/dam/Lawfirm/images/thumb-up.jpg"/>
+                        <title
+                            jcr:created="{Date}2021-05-29T12:25:18.470+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2021-05-29T12:25:39.106+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="We Have Free Templates for Everyone"
+                            sling:resourceType="Lawfirm/components/content/title"
+                            type="h2"/>
+                        <text
+                            jcr:created="{Date}2021-05-29T12:25:47.759+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2021-05-29T12:26:00.531+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="Lawfirm/components/content/text"
+                            text="&lt;p>Our website templates are created with inspiration, checked for quality and originality and meticulously sliced and coded. What's more, they're absolutely free! You can do a lot with them. You can modify them. You can use them to design websites for clients, so long as you agree with the &lt;a href=&quot;http://www.freewebsitetemplates.com/about/terms/&quot;>Terms of Use&lt;/a>. You can even remove all our links if you want to.&lt;/p>&#xd;&#xa;"
+                            textIsRich="true"/>
+                        <title_1949652163
+                            jcr:created="{Date}2021-05-29T12:26:21.253+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2021-05-29T12:26:39.986+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="We Have More Templates for You"
+                            sling:resourceType="Lawfirm/components/content/title"
+                            type="h2"/>
+                        <text_670738872
+                            jcr:created="{Date}2021-05-29T12:27:05.317+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2021-05-29T12:27:23.968+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="Lawfirm/components/content/text"
+                            text="&lt;p>Looking for more templates? Just browse through all our &lt;a href=&quot;http://www.freewebsitetemplates.com/&quot;>Free Website Templates&lt;/a> and find what you're looking for. But if you don't find any website template you can use, you can try our &lt;a href=&quot;http://www.freewebsitetemplates.com/freewebdesign/&quot;>Free Web Design&lt;/a> service and tell us all about it. Maybe you're looking for something different, something special. And we love the challenge of doing something different and something special.&lt;/p>&#xd;&#xa;"
+                            textIsRich="true"/>
+                        <title_608006083
+                            jcr:created="{Date}2021-05-29T12:27:31.752+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2021-05-29T12:27:53.131+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Be Part of Our Community"
+                            sling:resourceType="Lawfirm/components/content/title"
+                            type="h2"/>
+                        <text_1278127003
+                            jcr:created="{Date}2021-05-29T12:28:00.915+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2021-05-29T12:28:21.293+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="Lawfirm/components/content/text"
+                            text="&lt;p>If you're experiencing issues and concerns about this website template, join the discussion &lt;a href=&quot;http://www.freewebsitetemplates.com/forums/&quot;>on our forum&lt;/a> and meet other people in the community who share the same interests with you.&lt;/p>&#xd;&#xa;"
+                            textIsRich="true"/>
+                        <title_1613520789
+                            jcr:created="{Date}2021-05-29T12:28:35.498+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2021-05-29T12:28:44.446+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Template details"
+                            sling:resourceType="Lawfirm/components/content/title"
+                            type="h2"/>
+                        <text_1160283620
+                            jcr:created="{Date}2021-05-29T12:28:51.911+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2021-05-29T12:29:03.814+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="Lawfirm/components/content/text"
+                            text="&lt;p>Design version 11. Code version 6.&lt;/p>&#xd;&#xa;"
+                            textIsRich="true"/>
+                        <text_1247401002
+                            jcr:created="{Date}2021-05-29T12:29:19.289+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2021-05-29T12:29:25.189+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="Lawfirm/components/content/text"
+                            text="&lt;p>Website Template details, discussion and updates for this &lt;a href=&quot;http://www.freewebsitetemplates.com/discuss/lawfirm/&quot;>Law Firm Web Template&lt;/a>.&lt;/p>&#xd;&#xa;"
+                            textIsRich="true"/>
+                        <text_2128802535
+                            jcr:created="{Date}2021-05-29T12:29:35.672+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2021-05-29T12:29:47.552+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="Lawfirm/components/content/text"
+                            text="&lt;p>Website Template design by &lt;a href=&quot;http://www.freewebsitetemplates.com/&quot;>Free Website Templates&lt;/a>.&lt;/p>&#xd;&#xa;"
+                            textIsRich="true"/>
+                        <text_317292862
+                            jcr:created="{Date}2021-05-29T12:29:54.211+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2021-05-29T12:30:05.930+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="Lawfirm/components/content/text"
+                            text="&lt;p>Please feel free to remove some or all the text and links of this page and replace it with your own About content.&lt;/p>&#xd;&#xa;"
+                            textIsRich="true"/>
+                    </contents>
+                </about_content_holder>
+                <body_content_holder
+                    jcr:created="{Date}2021-05-29T15:19:38.489+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-05-29T15:19:38.489+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="Lawfirm/components/content/custom components/body-content-holder">
+                    <contents
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/parsys">
+                        <title
+                            jcr:created="{Date}2021-05-29T15:20:04.632+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2021-05-29T15:20:10.668+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="About Us"
+                            sling:resourceType="Lawfirm/components/content/title"
+                            type="h1"/>
+                        <about_image
+                            jcr:created="{Date}2021-05-29T15:20:18.024+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2021-07-17T11:37:21.617+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="Lawfirm/components/content/custom components/about-image"
+                            height="298"
+                            image="/content/dam/Lawfirm/images/thumb-up.jpg"
+                            style="frame2"
+                            width="924"/>
+                        <title_899615943
+                            jcr:created="{Date}2021-05-29T15:20:42.886+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2021-05-29T15:21:57.996+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="We Have Free Templates for Everyone"
+                            sling:resourceType="Lawfirm/components/content/title"
+                            type="h2"/>
+                        <text
+                            jcr:created="{Date}2021-05-29T15:20:53.803+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2021-05-29T15:22:14.701+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="Lawfirm/components/content/text"
+                            text="&lt;p>Our website templates are created with inspiration, checked for quality and originality and meticulously sliced and coded. What's more, they're absolutely free! You can do a lot with them. You can modify them. You can use them to design websites for clients, so long as you agree with the &lt;a href=&quot;http://www.freewebsitetemplates.com/about/terms/&quot;>Terms of Use&lt;/a>. You can even remove all our links if you want to.&lt;/p>&#xd;&#xa;"
+                            textIsRich="true"/>
+                        <title_876100738
+                            jcr:created="{Date}2021-05-29T15:21:02.856+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2021-05-29T15:22:34.281+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="We Have More Templates for You"
+                            sling:resourceType="Lawfirm/components/content/title"
+                            type="h2"/>
+                        <text_1313948767
+                            jcr:created="{Date}2021-05-29T15:21:26.052+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2021-05-29T15:22:49.622+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="Lawfirm/components/content/text"
+                            text="&lt;p>Looking for more templates? Just browse through all our &lt;a href=&quot;http://www.freewebsitetemplates.com/&quot;>Free Website Templates&lt;/a> and find what you're looking for. But if you don't find any website template you can use, you can try our &lt;a href=&quot;http://www.freewebsitetemplates.com/freewebdesign/&quot;>Free Web Design&lt;/a> service and tell us all about it. Maybe you're looking for something different, something special. And we love the challenge of doing something different and something special.&lt;/p>&#xd;&#xa;"
+                            textIsRich="true"/>
+                        <title_1910759679
+                            jcr:created="{Date}2021-05-29T15:21:32.648+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2021-05-29T15:23:06.037+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Be Part of Our Community"
+                            sling:resourceType="Lawfirm/components/content/title"
+                            type="h2"/>
+                        <text_902360857
+                            jcr:created="{Date}2021-05-29T15:21:39.941+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2021-05-29T15:23:19.441+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="Lawfirm/components/content/text"
+                            text="&lt;p>If you're experiencing issues and concerns about this website template, join the discussion &lt;a href=&quot;http://www.freewebsitetemplates.com/forums/&quot;>on our forum&lt;/a> and meet other people in the community who share the same interests with you.&lt;/p>&#xd;&#xa;"
+                            textIsRich="true"/>
+                        <title_1476348654
+                            jcr:created="{Date}2021-05-29T15:23:26.791+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2021-05-29T15:23:59.115+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Template details"
+                            sling:resourceType="Lawfirm/components/content/title"
+                            type="h2"/>
+                        <text_1107441640
+                            jcr:created="{Date}2021-05-29T15:23:41.553+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2021-05-29T15:24:10.252+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="Lawfirm/components/content/text"
+                            text="&lt;p>Design version 11. Code version 6.&lt;/p>&#xd;&#xa;"
+                            textIsRich="true"/>
+                        <text_1650298633
+                            jcr:created="{Date}2021-05-29T15:24:18.696+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2021-05-29T15:24:52.454+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="Lawfirm/components/content/text"
+                            text="&lt;p>Website Template details, discussion and updates for this &lt;a href=&quot;http://www.freewebsitetemplates.com/discuss/lawfirm/&quot;>Law Firm Web Template&lt;/a>.&lt;/p>&#xd;&#xa;"
+                            textIsRich="true"/>
+                        <text_891001929
+                            jcr:created="{Date}2021-05-29T15:24:25.273+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2021-05-29T15:25:05.028+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="Lawfirm/components/content/text"
+                            text="&lt;p>Website Template design by &lt;a href=&quot;http://www.freewebsitetemplates.com/&quot;>Free Website Templates&lt;/a>.&lt;/p>&#xd;&#xa;"
+                            textIsRich="true"/>
+                        <text_549883379
+                            jcr:created="{Date}2021-05-29T15:24:31.171+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2021-05-29T15:25:18.619+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="Lawfirm/components/content/text"
+                            text="&lt;p>Please feel free to remove some or all the text and links of this page and replace it with your own About content.&lt;/p>&#xd;&#xa;"
+                            textIsRich="true"/>
+                    </contents>
+                </body_content_holder>
+            </responsivegrid>
+        </root>
+        <cq:metadata jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

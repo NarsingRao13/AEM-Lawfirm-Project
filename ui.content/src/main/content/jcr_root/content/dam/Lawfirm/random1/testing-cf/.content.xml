@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="6e84983d-70e0-46ed-9dce-dbb0fc4f5f10">
+    <jcr:content
+        cq:name="testing-cf"
+        cq:parentPath="/content/dam/Lawfirm/cfs"
+        jcr:description="This CF is for testing."
+        jcr:lastModified="{Date}2021-05-28T16:02:48.195+05:30"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="Testing CF"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2021-05-28T16:02:48.195+05:30">
+        <data
+            cq:model="/conf/Lawfirm/settings/dam/cfm/models/randomcf-model"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                multiFieldTitle="[Title1,Title2]"
+                multiFieldTitle_x0040_LastModified="{Date}2021-05-27T18:28:08.440+05:30"
+                number="{Double}-4.0"
+                number_x0040_LastModified="{Date}2021-05-27T18:28:08.441+05:30"
+                title="Heyy"
+                title_x0040_LastModified="{Date}2021-05-27T18:28:08.439+05:30"/>
+            <v1
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                multiFieldTitle="[Title1,Title2]"
+                multiFieldTitle_x0040_LastModified="{Date}2021-05-28T12:33:08.229+05:30"
+                number="{Double}5.0"
+                number_x0040_LastModified="{Date}2021-05-28T12:33:08.229+05:30"
+                title="Narsing"
+                title_x0040_LastModified="{Date}2021-05-28T12:33:08.228+05:30"/>
+            <variation2
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                multiFieldTitle="[Title1,Title3,Title4]"
+                multiFieldTitle_x0040_LastModified="{Date}2021-05-28T16:02:48.149+05:30"
+                number="{Double}52656.0"
+                number_x0040_LastModified="{Date}2021-05-28T16:02:48.150+05:30"
+                title="Hello"
+                title_x0040_LastModified="{Date}2021-05-28T16:02:48.149+05:30"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <model jcr:primaryType="nt:unstructured">
+            <variations jcr:primaryType="nt:unstructured">
+                <v1
+                    jcr:description=""
+                    jcr:mixinTypes="[cq:Taggable]"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="v1"
+                    name="v1">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        synchronizeWithVersion="[title:c87f2d4d-2bc2-4169-8f0f-c8d4ae267244,multiFieldTitle:c87f2d4d-2bc2-4169-8f0f-c8d4ae267244,number:c87f2d4d-2bc2-4169-8f0f-c8d4ae267244]"/>
+                </v1>
+                <variation2
+                    jcr:description=""
+                    jcr:mixinTypes="[cq:Taggable]"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="variation2"
+                    name="variation2">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        synchronizeWithVersion="[title:3c601ee7-07d4-4dae-971f-e1a9dae2f5aa,multiFieldTitle:3c601ee7-07d4-4dae-971f-e1a9dae2f5aa,number:3c601ee7-07d4-4dae-971f-e1a9dae2f5aa]"/>
+                </variation2>
+            </variations>
+        </model>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

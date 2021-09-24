@@ -1,0 +1,33 @@
+
+
+<sly data-sly-use.cf="${'com.lawfirm.core.models.ContactSlideBarModel' @ cfInput=properties.cfdata,variation=properties.variation}"></sly>
+<div class="sidebar">
+   <div>
+      <h2>Contact Info</h2>
+      <sly>${cf.getCf}</sly>
+
+      <ul class="contact" >
+         <li>
+            <p>
+               <span class="home"></span> <em>${cf.name @context = 'html'}<br> ${cf.firm @context = 'html'}</em> ${cf.address @context = 'html'}
+            </p>
+         </li>
+         <li>
+            <p class="phone">
+               Phone: ${cf.phone}
+            </p>
+         </li>
+         <li>
+            <p class="fax">
+               Fax: ${cf.fax}
+            </p>
+         </li>
+         <li>
+            <p class="mail">
+               Email: ${cf.email}
+            </p>
+         </li>
+      </ul>
+   </div>
+</div>
+

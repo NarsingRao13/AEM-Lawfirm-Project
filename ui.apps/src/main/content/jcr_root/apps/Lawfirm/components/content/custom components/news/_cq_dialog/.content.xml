@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="News"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="Lawfirm.contentfragment.news">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <layout
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns">
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <news-multifield
+                                granite:class="lawfirm-practice-multifield"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldLabel="Details"
+                                validation="lawfirm-multifield">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./newsCard">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <image
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                            fieldLabel="News Image"
+                                            name="./image"
+                                            rootPath="/content/dam/Lawfirm/images"/>
+                                        <date-picker
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/datepicker"
+                                            displayedFormat="DD MMMM YYYY"
+                                            displayTimezoneMessage="{Boolean}[true]"
+                                            fieldLabel="Date"
+                                            name="./date"
+                                            text="Date"
+                                            type="date"
+                                            validation="date-validation"
+                                            valueFormat="YYYY/MM/DD"/>
+                                        <author
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                            fieldDescription="Provide valid title"
+                                            fieldLabel="Author"
+                                            name="./author"
+                                            validation="txt-validation"/>
+                                        <headline
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                            fieldDescription="Provide valid title"
+                                            fieldLabel="Headline"
+                                            name="./headline"
+                                            validation="heading-validation"/>
+                                        <news-content
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                            fieldDescription="Provide valid title"
+                                            fieldLabel="Main Content"
+                                            name="./content"
+                                            validation="desc-validation"/>
+                                    </items>
+                                </field>
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    max-items="{Long}3"
+                                    min-items="{Long}1"/>
+                            </news-multifield>
+                        </items>
+                    </column>
+                </items>
+            </layout>
+        </items>
+    </content>
+</jcr:root>

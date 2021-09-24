@@ -1,0 +1,18 @@
+
+
+<sly data-sly-use.ob = "com.lawfirm.core.models.RolesModel"></sly>
+ <div class="section ${ob.isLastOne}">
+         <h2>${ob.role}</h2>
+         <ul data-sly-list.ob3 = "${ob.roleDetails}">
+            <li>
+               <div class="frame4">
+                  <div class="box">
+                     <img src="${ob3.image}" alt="Img" height="94" width="90">
+                  </div>
+               </div>
+               <p>
+                  <b>${ob3.candidateName}</b> ${ob3.description}
+               </p>
+            </li>
+         </ul>
+      </div>

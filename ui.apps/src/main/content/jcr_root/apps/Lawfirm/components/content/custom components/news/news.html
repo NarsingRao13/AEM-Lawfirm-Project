@@ -1,0 +1,18 @@
+
+<sly data-sly-use.ob = "com.lawfirm.core.models.NewsModel"></sly> 
+<ul class="news" data-sly-list.l = "${ob.newsCard}">
+   <li>
+      <div class="box">
+         <img src="${l.image}" alt="Img" height="245" width="213">
+      </div>
+      <p class="info">
+         ${l.date} by <span class="author">${l.author}</span>
+      </p>
+      <h2>${l.headline}</h2>
+      <p>
+         ${l.content}
+      </p>
+      <a href="${currentPage.path}.html" class="more">Read More</a>
+   </li>
+</ul>
+

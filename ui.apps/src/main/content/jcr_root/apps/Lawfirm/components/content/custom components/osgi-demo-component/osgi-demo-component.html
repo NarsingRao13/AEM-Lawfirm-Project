@@ -1,0 +1,25 @@
+<h1>OSGI Demo Component</h1>
+<sly data-sly-use.ob = "com.lawfirm.core.models.OSGIConfigModelDemo"/>
+<div><p>Service Name: <b>${ob.serviceName}</b></p></div>
+
+<div><p>Service Count: <b>${ob.serviceCount}</b></p></div>
+<div><p>Live Data: <b>${ob.liveData}</b></p></div>
+<div><p>Run Modes: <b>${ob.runModes}</b></p></div>
+<div><b>Countries</b><div>
+	<ul data-sly-list = "${ob.countries}">
+		<li>${item}</li>
+	</ul>
+
+-------OSGiConfigDemo------------
+<sly data-sly-use.obj = "com.lawfirm.core.models.OSGiConfigDemo"/>
+<div><p>Service Name: <b>${obj.serviceName}</b></p></div>
+<div><p>Service Id: <b>${obj.serviceId}</b></p></div>
+<div><p>Service URl: <b>${obj.serviceURL}</b></p></div>
+
+-------
+<sly data-sly-use.obj1 = "com.lawfirm.core.models.OSGiFactoryConfigDemo"/>
+<div data-sly-list = "${obj1.getConfigList}">
+	<div><p>Service Name: <b>${item.serviceName}</b></p></div>
+    <div><p>Service Id: <b>${item.configID}</b></p></div>
+    <div><p>Service URl: <b>${item.serviceURL}</b></p></div>
+</div>
