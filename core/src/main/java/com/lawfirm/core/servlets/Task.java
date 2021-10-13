@@ -1,35 +1,30 @@
 package com.lawfirm.core.servlets;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.io.PrintWriter;
-import java.util.HashMap;
 import java.util.Iterator;
-import java.util.Map;
 import java.util.Scanner;
 
 import javax.servlet.Servlet;
 import javax.servlet.ServletException;
 
 import org.apache.http.HttpResponse;
-import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.methods.HttpGet;
-import org.apache.http.client.utils.HttpClientUtils;
 import org.apache.http.impl.client.CloseableHttpClient;
-import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.osgi.services.HttpClientBuilderFactory;
-import org.apache.http.protocol.HTTP;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.SlingHttpServletResponse;
 import org.apache.sling.api.servlets.HttpConstants;
 import org.apache.sling.api.servlets.SlingAllMethodsServlet;
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 import org.osgi.service.component.propertytypes.ServiceDescription;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.lawfirm.core.service.ContentFragmentsCURDoperations;
 import com.lawfirm.core.utils.LawfirmUtils;
@@ -39,6 +34,7 @@ import com.lawfirm.core.utils.LawfirmUtils;
 		"sling.servlet.selector=" + "json" })
 @ServiceDescription("Task Servlet")
 public class Task extends SlingAllMethodsServlet {
+	private static final Logger LOG = (Logger) LoggerFactory.getLogger(Task.class);
 	@Reference
 	private ContentFragmentsCURDoperations fragmentsCURDoperations;
 	@Reference
@@ -67,34 +63,38 @@ public class Task extends SlingAllMethodsServlet {
 		// hitAPI(jsonObject);
 	}
 
-	public JSONObject getAPIData(JSONObject jsonObject) {
-		JSONObject response = new JSONObject();
+	public JSONArray getAPIData(JSONObject jsonObject) {
+		JSONArray response = new JSONArray();
 		JSONObject variations = new JSONObject();
 		try {
 			variations = jsonObject.getJSONObject(LawfirmUtils.CONTENT_FRAGMENT_VARIATIONS);
 			System.out.println(variations.length());
 			Iterator<String> iterator  = variations.keys();
-			JSONObject desktop = variations.getJSONObject("desktop");
-			String url = desktop.getString("apiUrl");
-			response.put("result", hitAPI(url));
+			while(iterator.hasNext()) {
+				JSONObject desktop = variations.getJSONObject(iterator.next());
+				String url = desktop.getString("apiUrl");
+				response.put(hitAPI(url));
+			}
+			
 		} catch (JSONException | IOException e) {
-			// TODO Auto-generated catch block
+			LOG.error(e.getMessage());
 			e.printStackTrace();
 		}
 
 		return response;
 	}
 
-	public JSONObject hitAPI(String url) throws IOException {
+	public JSONObject hitAPI(String url) throws IOException, JSONException {
+		String line = "";
 		CloseableHttpClient httpclient = HttpClients.createDefault();
-		HttpGet httpget = new HttpGet(url);
+		HttpGet httpget = new HttpGet(url); 
 		System.out.println("Request Type: " + httpget.getMethod());
 		HttpResponse httpresponse = httpclient.execute(httpget);
 		Scanner sc = new Scanner(httpresponse.getEntity().getContent());
 		System.out.println(httpresponse.getStatusLine());
 		while (sc.hasNext()) {
-			System.out.println(sc.nextLine());
+			line = line + sc.nextLine();
 		}
-		return new JSONObject();
+		return new JSONObject().put(url, line);
 	}
 }
