@@ -12,6 +12,7 @@ public class LawfirmUtils {
 	public static final String CONTENT_FRAGMENT_NAME = "name";
 	public static final String CONTENT_FRAGMENT_VARIATIONS = "variations";
 	public static final String CONTENT_FRAGMENT_ELEMENTS = "elements";
+	public static final String CONTENT_FRAGMENT_DATA = "data";
 	public static final String CONTENT_FRAGMENT_TAGS_KEY = "cq:tags";
 	public static final String CONTENT_FRAGMENT_TAGS = "tags";
 	public static final String APPLICATION_JSON = "application/json";

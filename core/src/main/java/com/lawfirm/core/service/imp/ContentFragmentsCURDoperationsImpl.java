@@ -1,7 +1,9 @@
 package com.lawfirm.core.service.imp;
 
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Iterator;
+import java.util.List;
 
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
@@ -105,13 +107,29 @@ public class ContentFragmentsCURDoperationsImpl implements ContentFragmentsCURDo
 						if (variation.getValue() != null) {
 							FragmentData fragmentData = variation.getValue();
 							if (fragmentData.getValue() != null) {
-								innerData.put(element.getName(), fragmentData.getValue().toString());
+								DataType dataType = fragmentData.getDataType();
+								if (!dataType.isMultiValue()) {
+									innerData.put(element.getName(), fragmentData.getValue());
+								} else {
+									String[] stringArray = (String[]) fragmentData.getValue();
+									/*
+									 * int i = 0; if (stringArray != null) { for (String data : stringArray) { if
+									 * (data.contains(TCPConstants.FRAGMENT_PARENT_RESOURCE) &&
+									 * data.startsWith(TCPConstants.FRAGMENT_PARENT_RESOURCE) &&
+									 * !isContentFragment(data)) stringArray[i] = tcpConfigService.getUrl() + data;
+									 * i++; } }
+									 */
+									List<String> contentValueList = Arrays
+											.asList(stringArray != null ? stringArray : new String[0]);
+									innerData.put(element.getName(), contentValueList);
+								}
+
 							}
 						}
 						variations.put(variation.getName(), innerData);
 					}
 				}
-				response.put(LawfirmUtils.CONTENT_FRAGMENT_ELEMENTS, elements);
+				response.put(LawfirmUtils.CONTENT_FRAGMENT_DATA, elements);
 				response.put(LawfirmUtils.CONTENT_FRAGMENT_VARIATIONS, variations);
 			} catch (Exception e) {
 				LOG.error(e.getMessage());
@@ -184,6 +202,30 @@ public class ContentFragmentsCURDoperationsImpl implements ContentFragmentsCURDo
 			LOG.error("Error while getting Content Fragment {}", e);
 		}
 		return response;
+	}
+
+	@Override
+	public JSONObject getContentFragmentData(JSONObject object) {
+		JSONObject data = null;
+		try {
+			data = object.getJSONObject(LawfirmUtils.CONTENT_FRAGMENT_DATA);
+		} catch (JSONException e) {
+			LOG.error(e.getMessage());
+			e.printStackTrace();
+		}
+		return data;
+	}
+
+	@Override
+	public JSONObject getContentFragmentVariation(JSONObject object) {
+		JSONObject variations = null;
+		try {
+			variations = object.getJSONObject(LawfirmUtils.CONTENT_FRAGMENT_VARIATIONS);
+		} catch (JSONException e) {
+			LOG.error(e.getMessage());
+			e.printStackTrace();
+		}
+		return variations;
 	}
 
 }
